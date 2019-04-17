@@ -1,0 +1,24 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter
+
+public class Demo04Test {
+    public static void main(String[] args) throws IOException{
+    //1.创建InputStreamReader对象,构造方法中传递字节输入流和指定的编码表名称GBK
+    InputStreamReader isr = new InputStreamReader(new FileInputStream(("F:\\File\\a.txt"),"GBK");
+    //2.创建OutputStreamWriter对象,构造方法中传递字节输出流和指定的编码表名称UTF-8
+    OutputStreamWriter osw = new OutputSteramWriter(new FileOutputSteram("F:\\File\\b.txt"),"UTF-8");
+    int len = 0;
+    char[] chars = new char[1024];
+    while((len = isr.read(chars))!=-1){
+        osw.writer(chars,0,len);
+        }
+        osw.flush();
+        osw.close();
+        isr.close();
+    
+
+  }
+}
