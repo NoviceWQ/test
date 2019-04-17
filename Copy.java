@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Copy {
-    public static void main(String[] args){
+    public static void main(String[] args)throws IOException{
     //字节缓冲输入流
     BufferedInputStream bis = new BufferedInputStream(new FileInputStream("F:\\File\\123.zip");
     //字节缓冲输出流
