@@ -28,6 +28,7 @@ import java.io.PrintStream;
 
 public class PrintStream {
     public static void main(String[] args) throws FileNotFoundException {
+        print();
         
     }
     
